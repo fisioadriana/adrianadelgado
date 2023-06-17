@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap');
+
+* {
+  font-family: 'Kadwa', serif;
+
+}
+
+body {
+  font-family: 'Kadwa', serif;
+  background-color: #7b7676;
+}
+
+/**bar icons social**/
+/* .bar {
+  background: #500222;
+} */
+
+.bar ul {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.bar ul li {
+  list-style: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  /* background-color: rgb(91, 4, 46); */
+  background-color: rgb(36, 93, 8);
+}
+
+.bar ul li :hover {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #d390bb;
+  color: #270318;
+}
+
+.bar ul li i {
+  color: white;
+}
+
+
+.bar span {
+  display: inline-block;
+  color: rgb(197, 193, 193);
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+
+.bar2 {
+  background-color: #700b70bb;
+  box-shadow: 0 5px 15px rgb(211, 210, 213);
+}
+
+/* Titulos */
+
+.titulo1 {
+  color: #530854;
+  font-family: 'Kadwa', serif;
+  font-weight: 400;
+  font-size: 3.3rem;
+  font-stretch: condensed;
+  font-variant: small-caps;
+  text-shadow: 0px 1px 3px #495056;
+
+}
+
+.titulo h1 {
+  /*display: inline-flex;
+  text-align: center;*/
+  color: #cbc8c8;
+  font-family: 'Kadwa', serif;
+  font-weight: 400;
+  font-size: 2.8rem;
+  font-variant: small-caps;
+  background-color: #500222;
+  text-shadow: 0px 1px 3px #7b0599;
+}
+
+/***Navbar***/
+.collapse a {
+  margin-right: 3px;
+  text-align: center;
+  width: 120px;
+  font-size: 20px;
+  background: #53023bc4;
+  color: #ba99ba;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.collapse a:hover {
+  width: 120px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #790466c6;
+}
+
+.carousel-item {
+  min-height: 350px;
+  filter: revert;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*Boton servicios*/
+.caroparrafo {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  transition: bottom .4s ease-in;
+  box-shadow: 0 -10px 10px rgb(255 255 255 / 10%);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+}
+
+.caroparrafo p {
+  color: #240320;
+  font-family: 'Kadwa', serif;
+  font-size: 1.5rem;
+}
+
+.caroparrafo .btnservi {
+  text-decoration: none;
+  background-color: #582d65;
+  color: #ffffff;
+  border-radius: 0.5rem;
+}
+
+.caroparrafo .btnservi:hover {
+  background-color: #7a3f8d;
+  color: #060606;
+  border-radius: 0.7rem;
+}
+
+/*Boton carrusel*/
+.carousel-control-next .carousel-control-next-icon {
+  border-bottom: 3px solid #00a5f4;
+}
+
+.carousel-control-prev .carousel-control-prev-icon {
+  border-bottom: 3px solid #00a5f4;
+}
+
+/*Amimacion titulo principal*/
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fondofooter {
+  background-image: linear-gradient(-55deg, #f5f5f5 25%, #2cafdf 25%, #2cafdf 37.50%, #c7c7c7 37.50%, #c7c7c7 50%, #f5f5f5 50%, #f5f5f5 75%, #2cafdf 75%, #2cafdf 87.50%, #c7c7c7 87.50%, #c7c7c7 100%);
+  background-size: 4.00px 4.00px;
+}
+
+.backfooter {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #cbc8c8;
+}
+
+/**Pag Servicios**/
+.card {
+  background-color: #d6d3d6;
+  margin-right: 3px;
+  margin-top: 3px;
+}
+
+.card-title {
+  color: #833266;
+  font-family: 'Kadwa', serif;
+  font-weight: 400;
+  font-size: 2.0rem;
+  font-variant: small-caps;
+}
+
+.card-text {
+  font-family: 'Kablammo', cursive;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+@media screen and (max-width: 986px) {
+  .titulo1 {
+    color: #084054;
+    font-family: 'Kadwa', serif;
+    font-weight: 400;
+    font-size: 3rem;
+    font-stretch: condensed;
+    font-variant: small-caps;
+    text-shadow: 0px 1px 3px #495056;
+  }
+
+  .collapse a {
+    margin-top: 3px;
+  }
+
+  /*Tamaño img carrusel*/
+  .carousel-inner img {
+    height: 400px;
+  }
+
+  /**Servicios**/
+  .logocontac {
+    width: 650px;
+    height: 470px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bar {
+    text-align: center;
+  }
+
+  .bar ul li :hover {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 20%;
+    background-color: #d390bb;
+    color: #270318;
+  }
+
+  /**max-width 768**/
+  .titulo h1 {
+    text-align: center;
+    color: #cbc8c8;
+    font-family: 'Kadwa', serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    font-variant: small-caps;
+  }
+
+  /**Navbar**/
+
+  .collapse a {
+    margin-top: 1px;
+    text-align: center;
+    width: 100px;
+    font-size: 16px;
+    background: #53023bc4;
+    color: #ece8ec;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .collapse a:hover {
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #790466c6;
+  }
+
+  .titulo1 {
+    color: #084054;
+    font-family: 'Kadwa', serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-stretch: condensed;
+    font-variant: small-caps;
+    text-shadow: 0px 1px 3px #495056;
+  }
+
+  .caroparrafo p {
+    font-size: 1.0rem;
+  }
+
+  /*Tamaño img carrusel*/
+  .carousel-inner img {
+    height: 300px;
+  }
+
+  .carousel-item {
+    min-height: 450px;
+    filter: revert;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .logocontac {
+    width: 350px;
+    height: 300px;
+  }
+
+}
